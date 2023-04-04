@@ -1,3 +1,62 @@
 * {
   box-sizing: border-box;
 }
+
+.main {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image-slider {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.image-slider > a {
+  position: absolute;
+  top: 165px;
+  font-size: 30px;
+  padding: 5px;
+  color: rgb(129, 132, 132);
+  transition: 0.3s;
+}
+
+.image-slider > a:hover {
+  background: lightgray;
+}
+
+#next-image-btn {
+  right: 0px;
+}
+
+.current-image {
+  background-color: whitesmoke;
+  height: 400px;
+  width: 600px;
+  object-fit: cover;
+}
+
+.slider-dots {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin: 20px 0;
+}
+
+.dot {
+  display: block;
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+  background: darkgray;
+  transition: 0.3s;
+}
+
+.dot:hover,
+.dot-active {
+  background: rgb(88, 88, 88);
+}
