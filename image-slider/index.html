@@ -5,16 +5,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
     <title>Image Slider</title>
   </head>
   <body>
     <main class="main">
       <div class="image-slider">
-        <div class="current-image"></div>
-        <div class="slider-dots">
-          <span class="dot" id="1"></span>
+        <div id="image-container" class="current-image"></div>
+        <div class="slider-dots" id="slider-dots">
+          <span class="dot" id="0"></span>
+          <span class="dot dot-active" id="1"></span>
           <span class="dot" id="2"></span>
-          <span class="dot" id="3"></span>
         </div>
         <a id="prev-image-btn">❮</a>
         <a id="next-image-btn">❯</a>

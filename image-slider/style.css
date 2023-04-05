@@ -20,12 +20,12 @@
   top: 165px;
   font-size: 30px;
   padding: 5px;
-  color: rgb(129, 132, 132);
+  color: rgb(241, 241, 241);
   transition: 0.3s;
 }
 
 .image-slider > a:hover {
-  background: lightgray;
+  background: rgb(50, 50, 50, 0.5);
 }
 
 #next-image-btn {
@@ -33,10 +33,14 @@
 }
 
 .current-image {
-  background-color: whitesmoke;
+  background: whitesmoke;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+    rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+  border-radius: 10px;
   height: 400px;
   width: 600px;
   object-fit: cover;
+  transition: 1s;
 }
 
 .slider-dots {
